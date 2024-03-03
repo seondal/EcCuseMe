@@ -25,10 +25,17 @@ function secondExitByExit(closestExit: number): number {
       return 5;
     case 5:
       return 1;
+
     case 2:
       return 6;
+    case 2:
+      return 6;
+
     case 12:
       return 10;
+    case 12:
+      return 10;
+
     default:
       return 0;
   }
