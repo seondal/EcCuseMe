@@ -31,7 +31,7 @@ export default function Home() {
         />
         <span> 호</span>
       </div>
-      <div className="bg-slate-100 p-4 my-4">
+      <div className="bg-slate-100 dark:bg-slate-600 p-4 my-4">
         {data?.closestExit === 0 ? (
           <>올바른 강의실 번호를 입력해주세요</>
         ) : (
