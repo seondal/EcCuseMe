@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <h2>ECC 출구 찾기</h2>
       <div>이대역보다 출구가 많은 ECC 미로</div>
-      <div>내 강의실과 가장 가까운 출구는 어디일까?</div>
+      <div>강의실 번호 입력하고 가장 가까운 출구 찾기</div>
       <div className="font-bold text-center my-4 text-3xl">
         <span>B </span>
         <input
