@@ -1,5 +1,6 @@
 "use client";
 
+import { GA_TAG } from "@/constants/env";
 import { ExitData, exitDataByClassroom } from "@/utils/findExit";
 import Image from "next/image";
 import { useEffect, useState } from "react";
