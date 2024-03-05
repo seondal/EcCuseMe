@@ -7,6 +7,9 @@ import { GA_TAG } from "@/constants/env";
 export const metadata: Metadata = {
   title: "ECC 출구 찾기",
   description: "이대역보다 출구가 많은 ECC 미로",
+  other: {
+    "google-adsense-account": "ca-pub-7559978289195926",
+  },
 };
 
 export default function RootLayout({
