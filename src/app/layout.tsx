@@ -32,7 +32,7 @@ export default function RootLayout({
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', '<GOOGLE_ANALYTICS_GTAG>', {
+      gtag('config', '${GA_TAG}', {
         page_path: window.location.pathname,
       });
     `,

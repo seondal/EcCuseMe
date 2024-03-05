@@ -13,6 +13,8 @@ export default function Home() {
     setData(exitDataByClassroom(classroom));
   }, [classroom]);
 
+  console.log(GA_TAG);
+
   return (
     <>
       <h2>ECC 출구 찾기</h2>
