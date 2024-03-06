@@ -1,5 +1,6 @@
 "use client";
 
+import KakaoAdfit from "@/components/kakaoAdfit";
 import { ExitData, exitDataByClassroom } from "@/utils/findExit";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -57,6 +58,12 @@ export default function Home() {
           blurDataURL="/image/map.jpg"
         />
       </div>
+      <KakaoAdfit
+        width={320}
+        height={100}
+        unit={"DAN-UR1xj929Pmx2ug2Y"}
+        style="mt-4"
+      />
     </>
   );
 }
