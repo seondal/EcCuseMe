@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { ADSENSE_ACCOUNT, GA_TAG } from "@/constants/env";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Link from "next/link";
+import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
   title: "ECC 출구 찾기",
@@ -22,23 +22,14 @@ export default function RootLayout({
     <html lang="kor">
       <body>
         <header></header>
-        <main className="text-center max-w-96 m-auto pb-20">
+        <main className="text-center max-w-96 m-auto pb-36">
           <h2>ECC 출구 찾기</h2>
           {children}
         </main>
         <Analytics />
         <GoogleAnalytics gaId={GA_TAG} />
-        <footer className="fixed bottom-0 right-0 left-0 flex items-center justify-center gap-2 h-20 bg-background">
-          <Link href={"/"}>
-            <button>강의실 찾기</button>
-          </Link>
-          <Link href={"/facility"}>
-            <button>시설 찾기</button>
-          </Link>
-          <div className="text-xs">
-            <div>문의, 기능제안, 오류신고 편하게 해주세요 !</div>
-            <a href="https://toss.me/seondal">이 사이트 만든 사람</a>
-          </div>
+        <footer className="flex flex-col gap-4 justify-center fixed bottom-0 right-0 left-0 h-36 bg-background">
+          <Navigation />
         </footer>
       </body>
     </html>

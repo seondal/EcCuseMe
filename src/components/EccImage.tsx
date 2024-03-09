@@ -7,7 +7,7 @@ export default function EccImage() {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="my-16">
+    <div>
       <button onClick={() => setShow(true)}>출구 위치 보기</button>
       {show && (
         <div

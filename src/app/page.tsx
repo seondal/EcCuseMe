@@ -14,9 +14,11 @@ export default function Home() {
   }, [classroom]);
 
   return (
-    <>
-      <div>강의실 번호 입력하고 가장 가까운 출구 찾기</div>
-      <div>이대역보다 출구가 많은 ECC 미로</div>
+    <div className="flex flex-col gap-10">
+      <div>
+        <div>강의실 번호 입력하고 가장 가까운 출구 찾기</div>
+        <div>이대역보다 출구가 많은 ECC 미로</div>
+      </div>
       <div className="font-bold text-center my-4 text-3xl">
         <span>B </span>
         <input
@@ -31,7 +33,7 @@ export default function Home() {
         />
         <span> 호</span>
       </div>
-      <div className="bg-secondary p-4 my-4">
+      <div className="bg-secondary p-4">
         {data?.closestExit === 0 ? (
           <>올바른 강의실 번호를 입력해주세요</>
         ) : (
@@ -47,8 +49,7 @@ export default function Home() {
           </>
         )}
       </div>
-      <EccImage />
       <KakaoAdfit width={320} height={100} unit={"DAN-UR1xj929Pmx2ug2Y"} />
-    </>
+    </div>
   );
 }
