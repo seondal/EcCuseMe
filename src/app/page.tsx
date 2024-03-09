@@ -1,6 +1,5 @@
 "use client";
 
-import EccImage from "@/components/EccImage";
 import KakaoAdfit from "@/components/kakaoAdfit";
 import URL from "@/constants/url";
 import { ExitData, exitDataByClassroom } from "@/utils/findExit";
@@ -17,8 +16,8 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-4">
       <div>
-        <div>강의실 번호 입력하고 가장 가까운 출구 찾기</div>
         <div>이대역보다 출구가 많은 ECC 미로</div>
+        <div>강의실 번호를 입력하면 가까운 출구를 알려드려요</div>
       </div>
       <div className="font-bold text-center my-4 text-3xl">
         <span>B </span>
