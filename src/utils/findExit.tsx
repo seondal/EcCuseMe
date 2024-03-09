@@ -16,6 +16,9 @@ function closestExitByClassroom(classroom: number): number {
   if (328 <= classroom && classroom <= 337) return 6;
   if (338 <= classroom && classroom <= 341) return 2;
 
+  if (401 <= classroom && classroom <= 414) return 4;
+  if (415 <= classroom && classroom <= 422) return 4;
+
   return 0;
 }
 
