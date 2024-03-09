@@ -29,7 +29,7 @@ export default function RootLayout({
         </main>
         <Analytics />
         <GoogleAnalytics gaId={GA_TAG} />
-        <footer className="fixed bottom-0 right-0 left-0 flex items-center justify-center gap-2 h-20 bg-secondary">
+        <footer className="fixed bottom-0 right-0 left-0 flex items-center justify-center gap-2 h-20 bg-background">
           <Link href={"/"}>
             <button>강의실 찾기</button>
           </Link>
