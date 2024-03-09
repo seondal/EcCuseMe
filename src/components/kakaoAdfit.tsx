@@ -38,7 +38,7 @@ function KakaoAdFit({ width, height, unit, style }: KakaoAdFitI) {
 
     // 광고 로딩 여부 상태 변경
     adRef.current = true;
-  }, []);
+  }, [height, width, unit]);
 
   return (
     <div className={style}>

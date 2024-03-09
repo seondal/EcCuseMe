@@ -17,6 +17,7 @@ const config: Config = {
         background: "var(--background)",
         secondary: "var(--background-secondary)",
         main: "var(--main)",
+        text: "var(--text)",
       },
     },
   },

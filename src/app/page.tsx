@@ -2,6 +2,7 @@
 
 import EccImage from "@/components/EccImage";
 import KakaoAdfit from "@/components/kakaoAdfit";
+import URL from "@/constants/url";
 import { ExitData, exitDataByClassroom } from "@/utils/findExit";
 import { useEffect, useState } from "react";
 
@@ -14,7 +15,7 @@ export default function Home() {
   }, [classroom]);
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-4">
       <div>
         <div>강의실 번호 입력하고 가장 가까운 출구 찾기</div>
         <div>이대역보다 출구가 많은 ECC 미로</div>
@@ -50,6 +51,17 @@ export default function Home() {
         )}
       </div>
       <KakaoAdfit width={320} height={100} unit={"DAN-UR1xj929Pmx2ug2Y"} />
+      <div className="text-center mt-4 [&_button]:text-xs">
+        <div>문의, 기능제안, 오류신고 편하게 해주세요 !</div>
+        <div className="flex gap-4 justify-center mt-2">
+          <a href={URL.tossme}>
+            <button>이 사이트 만든 사람</button>
+          </a>
+          <a href={URL.feedback}>
+            <button>의견 남기러 가기</button>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

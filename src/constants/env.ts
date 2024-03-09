@@ -1,2 +1,5 @@
-export const GA_TAG = process.env.NEXT_PUBLIC_GA_TAG || "";
-export const ADSENSE_ACCOUNT = process.env.NEXT_PUBLIC_ADSENSE_ACCOUNT || "";
+const ENV = {
+  gaTag: process.env.NEXT_PUBLIC_GA_TAG || "",
+  adsense_account: process.env.NEXT_PUBLIC_ADSENSE_ACCOUNT || "",
+};
+export default ENV;
