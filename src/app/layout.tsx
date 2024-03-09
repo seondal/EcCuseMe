@@ -24,7 +24,6 @@ export default function RootLayout({
         <header></header>
         <main className="text-center max-w-96 m-auto pb-20">
           <h2>ECC 출구 찾기</h2>
-          <div>이대역보다 출구가 많은 ECC 미로</div>
           {children}
         </main>
         <Analytics />

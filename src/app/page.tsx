@@ -1,8 +1,8 @@
 "use client";
 
+import EccImage from "@/components/EccImage";
 import KakaoAdfit from "@/components/kakaoAdfit";
 import { ExitData, exitDataByClassroom } from "@/utils/findExit";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
   return (
     <>
       <div>강의실 번호 입력하고 가장 가까운 출구 찾기</div>
+      <div>이대역보다 출구가 많은 ECC 미로</div>
       <div className="font-bold text-center my-4 text-3xl">
         <span>B </span>
         <input
@@ -46,22 +47,8 @@ export default function Home() {
           </>
         )}
       </div>
-      <div className="relative h-60">
-        <Image
-          src="/image/map.jpg"
-          priority
-          fill
-          alt=""
-          placeholder="blur"
-          blurDataURL="/image/map.jpg"
-        />
-      </div>
-      <KakaoAdfit
-        width={320}
-        height={100}
-        unit={"DAN-UR1xj929Pmx2ug2Y"}
-        style="mt-1"
-      />
+      <EccImage />
+      <KakaoAdfit width={320} height={100} unit={"DAN-UR1xj929Pmx2ug2Y"} />
     </>
   );
 }
