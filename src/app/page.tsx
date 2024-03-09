@@ -15,8 +15,6 @@ export default function Home() {
 
   return (
     <>
-      <h2>ECC 출구 찾기</h2>
-      <div>이대역보다 출구가 많은 ECC 미로</div>
       <div>강의실 번호 입력하고 가장 가까운 출구 찾기</div>
       <div className="font-bold text-center my-4 text-3xl">
         <span>B </span>
@@ -32,7 +30,7 @@ export default function Home() {
         />
         <span> 호</span>
       </div>
-      <div className="bg-slate-100 dark:bg-slate-600 p-4 my-4">
+      <div className="bg-secondary p-4 my-4">
         {data?.closestExit === 0 ? (
           <>올바른 강의실 번호를 입력해주세요</>
         ) : (
@@ -62,7 +60,7 @@ export default function Home() {
         width={320}
         height={100}
         unit={"DAN-UR1xj929Pmx2ug2Y"}
-        style="mt-4"
+        style="mt-1"
       />
     </>
   );
