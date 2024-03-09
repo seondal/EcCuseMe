@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-import { GA_TAG } from "@/constants/env";
+import { ADSENSE_ACCOUNT, GA_TAG } from "@/constants/env";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import KakaoAdfit from "@/components/kakaoAdfit";
 
 export const metadata: Metadata = {
   title: "ECC 출구 찾기",
   description: "이대역보다 출구가 많은 ECC 미로",
   other: {
-    "google-adsense-account": "ca-pub-7559978289195926",
+    "google-adsense-account": ADSENSE_ACCOUNT,
   },
 };
 
@@ -22,7 +21,7 @@ export default function RootLayout({
     <html lang="kor">
       <body>
         <header></header>
-        <main className="text-center max-w-96 m-auto ">{children}</main>
+        <main className="text-center max-w-96 m-auto">{children}</main>
         <Analytics />
         <GoogleAnalytics gaId={GA_TAG} />
         <footer className="text-center p-4">
