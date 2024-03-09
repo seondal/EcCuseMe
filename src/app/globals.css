@@ -9,7 +9,7 @@
   --text: #121212;
   --text-secondary: #999;
   --link: #118bee;
-  --main: #00654F;
+  --main: #F4C4C5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,5 +36,5 @@ button {
   border: none;
   border-radius: 12px;
   padding: 1rem;
-  color: white;
+  color: black;
 }
