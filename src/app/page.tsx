@@ -1,5 +1,6 @@
 "use client";
 
+import WholeImage from "@/components/EccImage";
 import Update from "@/components/GimmeFeedback";
 import KakaoAdfit from "@/components/kakaoAdfit";
 import { ExitData, exitDataByClassroom } from "@/utils/findExit";
@@ -50,7 +51,13 @@ export default function Home() {
         )}
       </div>
       <KakaoAdfit width={320} height={100} unit={"DAN-UR1xj929Pmx2ug2Y"} />
-      <Update />
+      <div>
+        <Update />
+        <WholeImage
+          button="홈화면 추가하고 앱처럼 사용하기"
+          image="/image/webapp.png"
+        />
+      </div>
     </div>
   );
 }

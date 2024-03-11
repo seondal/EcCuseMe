@@ -1,4 +1,3 @@
-import Update from "@/components/GimmeFeedback";
 import URL from "@/constants/url";
 import Updates from "@/data/updates";
 

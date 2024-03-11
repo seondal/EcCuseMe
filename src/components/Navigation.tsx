@@ -11,7 +11,7 @@ export default function Navigation() {
         <Link href={"/facility"}>
           <button>시설 찾기</button>
         </Link>
-        <EccImage />
+        <EccImage image="/image/map.jpg" button="출구 위치 보기" />
       </div>
     </>
   );
