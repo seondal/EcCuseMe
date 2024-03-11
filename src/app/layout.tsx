@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   other: {
     "google-adsense-account": ENV.adsense_account,
     "naver-site-verification": ENV.naver_search_adviser,
+    "google-site-verification": ENV.google_search_console,
   },
 };
 
