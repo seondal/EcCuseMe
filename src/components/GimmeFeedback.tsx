@@ -8,10 +8,10 @@ export default function GimmeFeedback() {
       <div>보내주신 의견들을 바로 반영할게요</div>
       <div className="flex gap-4 justify-center mt-2 flex-wrap">
         <a href={URL.feedback}>
-          <button>의견 남기기</button>
+          <button>제작자에게 말걸기</button>
         </a>
         <Link href={"/update"}>
-          <button>업데이트 내역 보기</button>
+          <button>릴리즈 노트</button>
         </Link>
       </div>
     </div>
