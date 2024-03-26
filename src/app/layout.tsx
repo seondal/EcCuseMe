@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="kor">
+    <html lang="ko">
       <body>
         <header></header>
         <main className="text-center max-w-96 m-auto pb-24">
