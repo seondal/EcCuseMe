@@ -8,6 +8,10 @@ import ENV from "@/constants/env";
 export const metadata: Metadata = {
   title: "ECC 길찾기",
   description: "이화여대 ECC 시설 및 강의실 위치 찾기 지도 서비스",
+  openGraph: {
+    title: "ECC 길찾기",
+    description: "이대역보다 출구가 많은 ECC 미로",
+  },
   other: {
     "google-adsense-account": ENV.adsense_account,
     "naver-site-verification": ENV.naver_search_adviser,

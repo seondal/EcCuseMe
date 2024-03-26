@@ -57,9 +57,6 @@ export default function Home() {
           button="홈화면 추가하고 앱처럼 사용하기"
           image="/image/webapp.png"
         />
-        <div className="whitespace-pre mt-8">
-          {`이 사이트 디자인이 구린가요 ?\n'제작자에게 말걸기'를 눌러서 디자이너가 되어주세요 !`}
-        </div>
       </div>
     </div>
   );
