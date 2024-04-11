@@ -60,7 +60,7 @@ export default function Home() {
       <div className="flex gap-4 justify-center mt-2 flex-wrap">
         <a href="https://toss.me/seondal/1886">
           <button>사이트 만든 사람</button>
-        </a>
+        </a></div>
       </div>
     </div>
   );
