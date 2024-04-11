@@ -54,9 +54,13 @@ export default function Home() {
       <div>
         <Update />
         <WholeImage
-          button="홈화면 추가하고 앱처럼 사용하기"
+          button="앱처럼 사용하기"
           image="/image/webapp.png"
         />
+      <div className="flex gap-4 justify-center mt-2 flex-wrap">
+        <a href="https://toss.me/seondal/1886">
+          <button>사이트 만든 사람</button>
+        </a>
       </div>
     </div>
   );
