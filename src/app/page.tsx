@@ -3,7 +3,9 @@
 import WholeImage from "@/components/EccImage";
 import Update from "@/components/GimmeFeedback";
 import KakaoAdfit from "@/components/kakaoAdfit";
+import URL from "@/constants/url";
 import { ExitData, exitDataByClassroom } from "@/utils/findExit";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -52,6 +54,9 @@ export default function Home() {
       </div>
       <KakaoAdfit width={320} height={100} unit={"DAN-UR1xj929Pmx2ug2Y"} />
       <div>
+        <Link href={URL.cybercampus}>
+          <button>사캠 동영상 다운받는 방법</button>
+        </Link>
         <Update />
         <WholeImage
           button="홈화면 추가하고 앱처럼 사용하기"
