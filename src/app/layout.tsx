@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
+
+import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Navigation from "@/components/Navigation";
 import ENV from "@/constants/env";
@@ -32,7 +32,6 @@ export default function RootLayout({
           <h2>ECC 출구 찾기</h2>
           {children}
         </main>
-        <Analytics />
         <GoogleAnalytics gaId={ENV.gaTag} />
         <footer className="flex flex-col gap-4 justify-center fixed bottom-0 right-0 left-0 h-24 bg-background">
           <Navigation />

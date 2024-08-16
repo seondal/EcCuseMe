@@ -17,7 +17,7 @@ export default function Page() {
           </div>
         ))}
       </div>
-      <a href={URL.feedback}>
+      <a href={URL.developer}>
         <button>나도 의견 남기고 업데이트 참여하기</button>
       </a>
     </div>

@@ -58,7 +58,9 @@ export default function Home() {
           <button>사캠 동영상 다운받는 방법</button>
         </Link>
         <Update />
-        <WholeImage button="앱처럼 사용하기" image="/image/webapp.png" />
+        <div>
+          <WholeImage button="앱처럼 사용하기" image="/image/webapp.png" />
+        </div>
       </div>
     </div>
   );
