@@ -24,6 +24,13 @@ const Updates = [
     date: "24-03-26",
     contents: ["SEO를 진행했어요! 이제 포털사이트에서 검색 가능해요"],
   },
+  {
+    date: "24-09-02",
+    contents: [
+      "강의실 번호 미리 입력되어있는거 지우고 다시쓰기 귀찮다",
+      "ㄴ ㅇㅋ 인풋 비워둠",
+    ],
+  },
 ];
 
 export default Updates;

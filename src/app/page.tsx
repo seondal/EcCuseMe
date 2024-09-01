@@ -9,11 +9,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [classroom, setClassroom] = useState(301);
+  const [classroom, setClassroom] = useState();
   const [data, setData] = useState<ExitData>();
 
   useEffect(() => {
-    setData(exitDataByClassroom(classroom));
+    classroom && setData(exitDataByClassroom(classroom));
   }, [classroom]);
 
   return (
@@ -37,7 +37,7 @@ export default function Home() {
         <span> 호</span>
       </div>
       <div className="bg-secondary p-4">
-        {data?.closestExit === 0 ? (
+        {data === undefined || data.closestExit === 0 ? (
           <>올바른 강의실 번호를 입력해주세요</>
         ) : (
           <>
@@ -54,12 +54,12 @@ export default function Home() {
       </div>
       <KakaoAdfit width={320} height={100} unit={"DAN-UR1xj929Pmx2ug2Y"} />
       <div>
-        <Link href={URL.cybercampus}>
-          <button>사캠 동영상 다운받는 방법</button>
-        </Link>
         <Update />
-        <div>
+        <div className="flex gap-4 justify-center">
           <WholeImage button="앱처럼 사용하기" image="/image/webapp.png" />
+          <Link href={URL.cybercampus}>
+            <button>사캠 동영상 다운법</button>
+          </Link>
         </div>
       </div>
     </div>

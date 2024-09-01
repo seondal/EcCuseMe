@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div>
       <div>업데이트 내역</div>
-      <div className="text-left flex flex-col">
+      <div className="text-left flex flex-col-reverse">
         {Updates.map((item, idx) => (
           <div key={idx}>
             <h3>{item.date}</h3>
