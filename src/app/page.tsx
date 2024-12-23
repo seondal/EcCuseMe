@@ -23,7 +23,7 @@ export default function Home() {
       console.log(classroom);
       window.gtag("event", "search", {
         classroom: classroom,
-        debug_mode: true,
+        // debug_mode: true,
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
