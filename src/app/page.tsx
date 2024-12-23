@@ -13,8 +13,21 @@ export default function Home() {
   const [data, setData] = useState<ExitData>();
 
   useEffect(() => {
-    classroom && setData(exitDataByClassroom(classroom));
+    if (classroom) {
+      setData(exitDataByClassroom(classroom));
+    }
   }, [classroom]);
+
+  useEffect(() => {
+    if (!(data === undefined || data.closestExit === 0) && window.gtag) {
+      console.log(classroom);
+      window.gtag("event", "search", {
+        classroom: classroom,
+        debug_mode: true,
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data]);
 
   return (
     <div className="flex flex-col gap-4">
