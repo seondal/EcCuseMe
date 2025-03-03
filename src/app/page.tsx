@@ -70,7 +70,7 @@ export default function Home() {
         <Update />
         <div className="flex gap-4 justify-center">
           <WholeImage button="앱처럼 사용하기" image="/image/webapp.png" />
-          <Link href={URL.developer}>
+          <Link href={URL.feedback}>
             <button>이 사이트 만든 사람</button>
           </Link>
         </div>
