@@ -70,8 +70,8 @@ export default function Home() {
         <Update />
         <div className="flex gap-4 justify-center">
           <WholeImage button="앱처럼 사용하기" image="/image/webapp.png" />
-          <Link href={URL.cybercampus}>
-            <button>사캠 동영상 다운법</button>
+          <Link href={URL.developer}>
+            <button>이 사이트 만든 사람</button>
           </Link>
         </div>
       </div>
