@@ -10,14 +10,14 @@ export default function FacilityList({ data }: FacilityListI) {
     <div className="flex flex-col gap-4">
       {data.map((item) =>
         item.isGate === "Yes" ? (
-          <div key={item.id} className="bg-main text-black py-4">
+          <button key={item.id} className="">
             <b>{item.name}</b>
             <div className="text-xs">{item.explain}</div>
-          </div>
+          </button>
         ) : (
-          <div
+          <button
             key={item.id}
-            className="flex flex-col justify-center bg-secondary rounded-lg h-28 px-4">
+            className="secondary flex flex-col justify-center rounded-lg h-28 px-4">
             {item.image && (
               <div className="h-8 relative mb-2">
                 <Image
@@ -31,7 +31,7 @@ export default function FacilityList({ data }: FacilityListI) {
             <b>{item.name}</b>
             <div className="text-xs">B{item.room}호</div>
             <div className="text-xs">{item.explain}</div>
-          </div>
+          </button>
         )
       )}
     </div>

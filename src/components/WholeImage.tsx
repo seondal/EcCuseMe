@@ -1,19 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { PropsWithChildren, useState } from "react";
 
-interface WholeImageI {
+interface WholeImageI extends PropsWithChildren {
   image: string;
-  button: string;
 }
 
-export default function WholeImage({ image, button }: WholeImageI) {
+export default function WholeImage({ image, children }: WholeImageI) {
   const [show, setShow] = useState(false);
 
   return (
     <div>
-      <button onClick={() => setShow(true)}>{button}</button>
+      <div onClick={() => setShow(true)}>{children}</div>
       {show && (
         <div
           className="fixed right-0 left-0 top-0 bottom-0 z-10"

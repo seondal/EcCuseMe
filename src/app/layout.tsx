@@ -1,9 +1,11 @@
-import "./globals.css";
+import "@picocss/pico";
+import "../style/theme.css";
+import "../style/globals.css";
 
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Navigation from "@/components/Navigation";
 import ENV from "@/constants/env";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "ECC 길찾기",
@@ -26,16 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
-        <header></header>
-        <main className="text-center max-w-96 m-auto pb-24">
-          <h2>ECC 출구 찾기</h2>
-          {children}
-        </main>
+      <body className="text-center max-w-96 m-auto pb-24">
+        <Header />
+        <main>{children}</main>
         <GoogleAnalytics gaId={ENV.gaTag} />
-        <footer className="flex flex-col gap-4 justify-center fixed bottom-0 right-0 left-0 h-24 bg-background">
-          <Navigation />
-        </footer>
       </body>
     </html>
   );

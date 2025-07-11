@@ -5,17 +5,24 @@ import { facilityNearGate3, facilityNearGate4 } from "@/utils/sortFacility";
 export default function Page() {
   return (
     <>
-      <div>재학생이 아니어도 이용 가능한 지하 4층</div>
-      <div>다양한 시설들을 위치 순서대로 보여드릴게요</div>
+      <article>
+        재학생이 아니어도 이용 가능한 지하 4층
+        <br />
+        다양한 시설들을 위치 순서대로 보여드릴게요
+      </article>
       <div className="flex gap-4 mt-4 justify-center">
-        <div>
-          <h3>3번 출구쪽</h3>
+        <article>
+          <header>
+            <b>3번 출구쪽</b>
+          </header>
           <FacilityList data={facilityNearGate3} />
-        </div>
-        <div>
-          <h3>4번 출구쪽</h3>
+        </article>
+        <article>
+          <header>
+            <b>4번 출구쪽</b>
+          </header>
           <FacilityList data={facilityNearGate4} />
-        </div>
+        </article>
       </div>
       <KakaoAdfit
         width={300}
