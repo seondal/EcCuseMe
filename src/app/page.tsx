@@ -1,5 +1,6 @@
 "use client";
 
+import Ad from "@/components/Ad";
 import KakaoAdfit from "@/components/kakaoAdfit";
 import { ExitData, exitDataByClassroom } from "@/utils/findExit";
 import { useEffect, useState } from "react";
@@ -65,6 +66,7 @@ export default function Home() {
           )}
         </div>
       </article>
+      <Ad />
       <KakaoAdfit width={320} height={100} unit={"DAN-UR1xj929Pmx2ug2Y"} />
     </div>
   );
