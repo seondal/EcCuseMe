@@ -29,12 +29,12 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-4">
       <article>
-        이대역보다 출구가 많은 ECC 미로
-        <br />
-        강의실 번호를 입력하면 가까운 출구를 알려드려요
-      </article>
-      <article>
-        <header className="flex font-bold items-center justify-center gap-2 text-3xl">
+        <header>
+          이대역보다 출구가 많은 ECC 미로
+          <br />
+          강의실 번호를 입력하면 가까운 출구를 알려드려요
+        </header>
+        <div className="flex font-bold items-center justify-center gap-2 text-3xl">
           <span>B </span>
           <input
             size={3}
@@ -48,8 +48,8 @@ export default function Home() {
             onChange={(e: any) => setClassroom(e.target.value)}
           />
           <span> 호</span>
-        </header>
-        <div>
+        </div>
+        <footer>
           {data === undefined || data.closestExit === 0 ? (
             <>올바른 강의실 번호를 입력해주세요</>
           ) : (
@@ -64,7 +64,7 @@ export default function Home() {
               )}
             </>
           )}
-        </div>
+        </footer>
       </article>
       <Ad />
       <KakaoAdfit width={320} height={100} unit={"DAN-UR1xj929Pmx2ug2Y"} />
